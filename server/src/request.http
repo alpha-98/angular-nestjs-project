@@ -5,3 +5,12 @@ GET {{baseUrl}}
 
 ###
 GET {{baseUrl}}/users
+
+###
+POST {{baseUrl}}/users
+content-type: application/json
+
+{
+    "name": "Gambhir Rathore",
+    "age": 12
+}

@@ -10,6 +10,8 @@ import {
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+import { Serialize } from 'src/interceptors/serialize/serialize.interceptor';
+import { UserDto } from './dto/user.dto';
 
 @Controller('users')
 export class UsersController {
@@ -20,6 +22,7 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
+  @Serialize(UserDto)
   @Get()
   findAll() {
     return this.usersService.findAll();
