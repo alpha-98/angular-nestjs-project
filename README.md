@@ -1,1 +1,1 @@
-# angular-nestjs-project
+# curated-choice-ecommerce-project
