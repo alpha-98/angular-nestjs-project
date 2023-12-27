@@ -7,6 +7,9 @@ GET {{baseUrl}}
 GET {{baseUrl}}/users
 
 ###
+GET {{baseUrl}}/users/658c6a748dbdf76e387c28a9
+
+###
 POST {{baseUrl}}/users
 content-type: application/json
 
@@ -14,3 +17,15 @@ content-type: application/json
     "name": "Gambhir Rathore",
     "age": 12
 }
+
+###
+PATCH  {{baseUrl}}/users/658c6a748dbdf76e387c28a9
+content-type: application/json
+
+{
+    "name": "Gambhir Rathore",
+    "age": 14
+}
+
+###
+DELETE {{baseUrl}}/users/6580b23b524d0f80707d45d7
